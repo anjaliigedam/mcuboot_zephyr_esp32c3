@@ -1,0 +1,66 @@
+Executing action: all (aliases: build)
+Running ninja in directory /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/boot/espressif/esp32c3-hello/hello_world/build
+Executing "ninja all"...
+[8/871] Generating ../../partition_table/partition-table.binPartition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+[437/871] Performing configure step for 'bootloader'-- Found Git: /usr/bin/git (found version "2.25.1") 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/rnd/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/rnd/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/rnd/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c3
+-- Project sdkconfig file /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/boot/espressif/esp32c3-hello/hello_world/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Adding linker script /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- App "bootloader" version: v5.1.4
+-- Adding linker script /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/bootloader/subproject/main/ld/esp32c3/bootloader.ld
+-- Adding linker script /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/bootloader/subproject/main/ld/esp32c3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table riscv soc spi_flash
+-- Component paths: /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/bootloader /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/bootloader_support /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/efuse /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_app_format /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_common /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_hw_support /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_rom /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esp_system /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/esptool_py /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/freertos /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/hal /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/log /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/bootloader/subproject/main /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/bootloader/subproject/components/micro-ecc /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/newlib /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/partition_table /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/riscv /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/soc /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/esp32c3/esp-idf-v5.1.4/components/spi_flash
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/boot/espressif/esp32c3-hello/hello_world/build/bootloader
+[95/96] Generating binary image from built executableesptool.py v4.9.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/boot/espressif/esp32c3-hello/hello_world/build/bootloader/bootloader.bin
+[96/96] cd /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/boot/espressif/esp3...tlab/mcuboot_zephyr_esp32c3/boot/espressif/esp32c3-hello/hello_world/build/bootloader/bootloader.binBootloader binary size 0x5060 bytes. 0x2fa0 bytes (37%) free.
+[870/871] Generating binary image from built executableesptool.py v4.9.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/boot/espressif/esp32c3-hello/hello_world/build/hello_world.bin
+[871/871] cd /home/rnd/Documents/pic64gx_secure_boot/gitlab/mcuboot_zephyr_esp32c3/boot/espressif/es...re_boot/gitlab/mcuboot_zephyr_esp32c3/boot/espressif/esp32c3-hello/hello_world/build/hello_world.binhello_world.bin binary size 0x292b0 bytes. Smallest app partition is 0x100000 bytes. 0xd6d50 bytes (84%) free.
+
+Project build complete. To flash, run this command:
+/home/rnd/.espressif/python_env/idf5.1_py3.8_env/bin/python ../../../../esp32c3/esp-idf-v5.1.4/components/esptool_py/esptool/esptool.py -p (PORT) -b 460800 --before default_reset --after hard_reset --chip esp32c3  write_flash --flash_mode dio --flash_size 2MB --flash_freq 80m 0x0 build/bootloader/bootloader.bin 0x8000 build/partition_table/partition-table.bin 0x10000 build/hello_world.bin
+or run 'idf.py -p (PORT) flash'
+
